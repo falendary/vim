@@ -54,6 +54,10 @@ NeoBundle 'tmhedberg/matchit'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 "Jade syntax
 NeoBundle 'digitaltoad/vim-jade'
+"SCSS improvments
+NeoBundle 'cakebaker/scss-syntax.vim'
+"rename
+NeoBundle 'danro/rename.vim'
 "Fugitivi
 NeoBundle 'tpope/vim-fugitive'
 call neobundle#end()
@@ -119,3 +123,5 @@ set ts=4 sw=4 et
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#303030   ctermbg=236
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#191919   ctermbg=102
 let g:indent_guides_guide_size = 1
+"SCSS folding
+autocmd BufRead,BufNewFile *.css,*.scss,*.less setlocal foldmethod=marker foldmarker={,}
