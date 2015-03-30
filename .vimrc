@@ -49,7 +49,11 @@ NeoBundle 'othree/xml.vim'
 "matchit
 NeoBundle 'tmhedberg/matchit'
 "ctrlp
-NeoBundle 'kien/ctrlp.vim'
+"NeoBundle 'kien/ctrlp.vim'
+"highlight indent
+NeoBundle 'nathanaelkane/vim-indent-guides'
+"Jade syntax
+NeoBundle 'digitaltoad/vim-jade'
 "Fugitivi
 NeoBundle 'tpope/vim-fugitive'
 call neobundle#end()
@@ -106,3 +110,12 @@ autocmd vimenter * NERDTree
 let NERDTreeMinimalUI=1
 let g:nerdtree_tabs_open_on_console_startup=1
 "---------------------------
+
+" Intent highlight
+"
+"colorscheme tir_black
+let g:indent_guides_auto_colors = 0
+set ts=4 sw=4 et
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#303030   ctermbg=236
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#191919   ctermbg=102
+let g:indent_guides_guide_size = 1
