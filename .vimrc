@@ -125,3 +125,5 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#191919   ctermbg=102
 let g:indent_guides_guide_size = 1
 "SCSS folding
 autocmd BufRead,BufNewFile *.css,*.scss,*.less setlocal foldmethod=marker foldmarker={,}
+"Emmet
+let g:user_emmet_expandabbr_key = '<S-Tab>'
